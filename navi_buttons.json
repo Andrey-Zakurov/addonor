@@ -1,0 +1,50 @@
+{
+    "text_button": "test button 1",
+    "ids_groups": [
+        1,
+        2
+    ],
+    "command": "command",
+    "id_next_menu": [],
+    "descript": "test but created"
+}
+
+{
+    "text_button": "\u043d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0438",
+    "ids_groups": [
+        1,
+        2
+    ],
+    "command": "settings",
+    "id_next_menu": [
+        2
+    ],
+    "descript": "\u0432\u044b\u0437\u043e\u0432 \u043c\u0435\u043d\u044e \u043d\u0430\u0441\u0442\u0440\u043e\u0435\u043a"
+}
+
+{
+    "text_button": "saddasdsa",
+    "ids_groups": [
+        1,
+        2
+    ],
+    "command": " sdad",
+    "id_next_menu": [
+        1
+    ],
+    "descript": "sadsad"
+}
+
+{
+    "text_button": "aasdsadasd",
+    "ids_groups": [
+        1,
+        2
+    ],
+    "command": "asddd",
+    "id_next_menu": [
+        1
+    ],
+    "descript": "sdadd"
+}
+
