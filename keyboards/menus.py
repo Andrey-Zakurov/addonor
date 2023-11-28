@@ -10,3 +10,7 @@ def main_menu() -> ReplyKeyboardMarkup:
     kb.adjust(2)
     return kb.as_markup(resize_keyboard=True)
 
+
+# генерация меню
+def menu(data):
+    pass
