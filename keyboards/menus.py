@@ -28,5 +28,7 @@ def menu_replykeyboard(data: dict) -> ReplyKeyboardMarkup:
     kb = ReplyKeyboardBuilder()
     for text_button in data["buttons"]:
         kb.button(text=text_button)
-    kb.adjust(data["setings"]["adjust"])
+    print("ok")
+    kb.adjust(data["settings"]["adjust"])
+    print(dir(kb))
     return kb.as_markup(resize_keyboard=True)

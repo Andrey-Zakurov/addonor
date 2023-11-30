@@ -14,7 +14,7 @@ from dbase import data_object as DB
 # получение конфигурационных данных
 from config import token, token_dev
 # роутеры
-#from handlers import test_dev
+from handlers import test, text
 # клавиатуры
 from keyboards import menus, dialogs
 
@@ -27,9 +27,9 @@ logging.basicConfig(level=logging.INFO, filename="py_log.log", filemode="w")
 async def main():
     print("Test from develop")
     bot = Bot(token_dev)
-    print(dir(bot))
     dp = Dispatcher()
-    dp.include_router(test_dev.router)
+    dp.include_router(test.router)
+    dp.include_router(text.router)
     await bot.delete_webhook(drop_pending_updates=True)
     await dp.start_polling(bot)
 

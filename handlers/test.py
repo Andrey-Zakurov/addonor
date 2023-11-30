@@ -21,5 +21,6 @@ async def start_main_menu(message):
                         "adjust": 1
                         }
         }
+    print(data)
     await message.answer("какая то информация", reply_markup=menu_replykeyboard(data))
 
