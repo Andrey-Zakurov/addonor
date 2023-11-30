@@ -1,0 +1,1 @@
+from tests import test_func_create_new_user

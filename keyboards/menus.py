@@ -12,5 +12,21 @@ def main_menu() -> ReplyKeyboardMarkup:
 
 
 # генерация меню
-def menu(data):
-    pass
+def menu_replykeyboard(data: dict) -> ReplyKeyboardMarkup:
+    """
+    example data:
+        {
+            "buttons": (
+                        "кнопка1",
+                        ...
+                       ),
+            "settings": {
+                        "adjust": 1
+                        }
+        }
+    """
+    kb = ReplyKeyboardBuilder()
+    for text_button in data["buttons"]:
+        kb.button(text=text_button)
+    kb.adjust(data["setings"]["adjust"])
+    return kb.as_markup(resize_keyboard=True)
