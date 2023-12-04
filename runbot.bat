@@ -1,0 +1,8 @@
+set TOKEN=5151944905:AAGhnzorvWfgyZEM3f12oKIFj4_hbC6GlQc
+
+set TOKEN_TEST=6408978381:AAF4vU9i8cEz8Ui0822GUj17Yc84hEziU88
+set ADMIN_ID=1732557422
+set ADMIN_PASSWORD=admin
+
+set DBASE="dbase.db"
+python addonor\test_main.py
